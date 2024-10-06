@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
     <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-center p-4">
       <div className="bg-gray-800 text-white p-8 rounded-lg shadow-lg max-w-md w-full text-center mb-8">
         <h1 className="text-3xl font-bold mb-6">Ron Swanson Quotes</h1>
-        <p className="text-lg italic mb-6">"{quote ? quote : 'Loading...'}"</p>
+        <p className="text-lg italic mb-6">{quote ? quote : 'Loading...'}</p>
         <div className="flex justify-center space-x-4">
           <button
             onClick={fetchQuote}
@@ -62,7 +62,7 @@ function App() {
                 key={index}
                 className="bg-gray-800 text-white p-4 rounded-lg shadow-lg"
               >
-                <p className="italic">"{savedQuote}"</p>
+                <p className="italic">{savedQuote}</p>
               </div>
             ))}
           </div>
